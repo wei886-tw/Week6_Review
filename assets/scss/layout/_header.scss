@@ -1,0 +1,12 @@
+.logo{
+  @include mobile{
+    width: 40px;
+    height: 40px;
+  }
+
+  @include pc{
+    width: 53px;
+    height: 53px;
+  }
+
+}

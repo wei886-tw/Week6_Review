@@ -1,0 +1,71 @@
+.index-bg{
+    background-image: url("../images/event/13.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 518px;
+    object-fit: cover;
+}
+
+.letter-spacing-1_2{
+    letter-spacing: 1.2px;
+}
+
+.genre-img{
+    @include mobile {
+    width: 40px;
+    height: 40px;
+        }
+
+
+    @include pad{
+        width: 80px;
+        height: 80px;
+        }
+}
+
+.recent-activity-img{
+    @include mobile{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    }
+
+    @include pad{
+        width: 100%;
+        height: 255px;
+        }
+
+
+    @include pc {
+    width: 100%;
+    height: 255px;
+    }
+}
+
+.chat-gpt-img{
+    @include mobile{
+    width: 100%;
+    height: auto;
+    max-height: 255px;
+    object-fit: cover;
+    }
+
+    @include pad{
+    height: auto;
+    max-height: 330px;
+    }
+
+}
+
+.h2-transform{
+    transform: translate(-50%, -50%) rotate(-4deg);
+}
+
+.card-transform-right{
+    transform: rotate(2deg);
+}
+
+.card-transform-left{
+    transform: rotate(-2deg);
+}
