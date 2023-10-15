@@ -429,7 +429,9 @@ $link-color:                              black !default;
 // $link-color:                              $primary !default;
 $link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+// $link-hover-color:                      shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        gray !default;
+
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -617,6 +619,7 @@ $font-sizes: (
   40: 2.5rem,
   32: 2rem,
   24: 1.5rem,
+  20: 1.25rem,
   18: 1.125rem,
   16: 1rem,
 ) !default;
