@@ -1,0 +1,6 @@
+.pseudo-border::before{
+    content:'';
+    border-left: solid 2px black;
+    display: inline-block;
+    height: 36px;
+}

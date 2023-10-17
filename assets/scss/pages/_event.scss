@@ -1,4 +1,5 @@
 .event-date::after {
+    @media (min-width: 996px){
     content: '';
     position: absolute;
     width: 100px;
@@ -7,7 +8,7 @@
     top: 46%;
     margin: 20px 20px;
     transform: translateX(-50%) rotate(120deg);
-    background-color: black;
+    background-color: black;}
 }
 
 .event-date-2::after {

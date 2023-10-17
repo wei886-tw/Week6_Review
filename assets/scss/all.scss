@@ -5,6 +5,8 @@
 @import "./base/base";
 @import "./base/typography.scss";
 
+@import './components/pseudo-border';
+
 @import "./helpers/mixins";
 @import "./layout/marquee.scss";
 @import "./layout/header.scss";
