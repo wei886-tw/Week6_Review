@@ -10,24 +10,24 @@
     <%- include('./layout/header'); -%>
     <div class="container-fluid flex-grow-1">
       <!-- 付款進度 -->
-      <div class="container">
+      <div class="container-xxl">
         <div class="row">
-          <div class="col-12 col-lg-6 mx-auto">
-            <ol class="pt-60 ps-0 d-flex justify-content-between">
-              <li class="d-flex flex-column">
-                <button class="btn btn-primary px-sm-18 py-12 fs-20 fw-bold mb-8 payment-list">1</button>
+          <div class="col-12 col-md-6 mx-auto px-0">
+            <ol class="pt-60 ps-0 d-flex justify-content-between position-relative payment-list flex-grow-1">
+              <li class="d-flex flex-column align-content-center">
+                <button class="btn btn-primary px-sm-18 py-12 fs-20 fw-bold mb-8 number">1</button>
                 <p>訂單確認</p>
                 
               </li>
 
-              <li class="d-flex flex-column">
-                <button class="btn btn-primary  px-18 py-12 fs-20 fw-bold mb-8 payment-list">2</button>
+              <li class="d-flex flex-column position-relative align-content-center">
+                <button class="btn btn-primary  px-18 py-12 fs-20 fw-bold mb-8  number">2</button>
                 <p>結帳付款</p>
                 
               </li>
 
-              <li class="d-flex flex-column">
-                <button class="btn btn-primary  px-18 py-12 fs-20 fw-bold mb-8 payment-list">3</button>
+              <li class="d-flex flex-column position-relative align-content-center">
+                <button class="btn btn-primary  px-18 py-12 fs-20 fw-bold mb-8 number">3</button>
                 <p>付款成功</p>
                 
               </li>
@@ -39,14 +39,14 @@
       </div>
 
       <!-- 票價、票種 -->
-      <div class="container">
+      <div class="container-xxl mb-96">
         <div class="row ">
-          <div class="col-12 col-lg-6 mx-lg-auto">
+          <div class="col-12 col-md-6 mx-md-auto">
             <h2 class="fs-32 fs-sm-48 fw-bold text-center mb-32">返老還童-制服聯誼</h2>
           </div>
 
           <div class="row">
-            <div class="col-12 col-lg-6 mx-auto">
+            <div class="col-12 col-md-6 mx-auto">
               <ul class="ps-0">
                 <li class="d-flex justify-content-between border-top border-3 border-primary py-8">
                   <p class="fw-bold">日期</p>
@@ -67,29 +67,44 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- test -->
-    <div class="container mt-3">
-      <div class="row">
-        <div class="col-md-3 col-lg-2 col-8 mx-auto">
-          <div class="date d-flex flex-md-column flex-row align-items-center justify-content-between border border-3 border-dark position-relative">
-            <div class="d-flex flex-column align-items-center">
-              <h2 class="text-center ">
-                MAY
-                <br>
-                19
-              </h2>
-            </div>
-            <div class="time d-flex flex-column justify-content-center align-items-center">
-              <p class="mb-0 lh-1">12:00</p>
-              <p class="mb-0 lh-1">|</p>
-              <p class="mb-0 lh-1">20:00</p>
-            </div>
+      <!-- 聯絡人資料 -->
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12 col-md-6 mx-auto">
+            <h2 class="fs-24 fw-bold ff-noto-serif text-center mb-16">聯絡人資料</h2>
+            <form action="">
+              <div class="mb-16">
+                <label for="name-input" class="mb-8 ff-noto-sans">聯絡人姓名</label>
+                <input type="text" name="" id="name-input" class="form-control border-2 border-primary ff-noto-sans" placeholder="請輸入聯絡人姓名">
+              </div>
+
+              <div class="mb-16">
+                <label for="email-input" class="mb-8 ff-noto-sans">Email</label>
+                <input type="email" name="" id="emial-input" class="form-control border-2 border-primary ff-noto-sans" placeholder="請輸入email">
+              </div>
+
+              <div class="mb-32">
+                <label for="phone-input" class="mb-8 ff-noto-sans">聯絡人電話</label>
+                <input type="phone-number" name="" id="phone-input" class="form-control border-2 border-primary ff-noto-sans" placeholder="請輸入聯絡人手機號碼">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 購票連結 -->
+      <div class="container-xxl mb-60">
+        <div class="row">
+          <div class="col-12 col-sm-4 mx-auto">
+            <div class="btn bg-primary ff-noto-sans text-white align-items-center w-100 mb-16">確認表單資料 >></div>
+            <a href="#" class="text-center ff-noto-sans text-gray d-block">取消購票</a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- footer -->
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
